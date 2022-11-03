@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-
+import requests
 
 st.markdown('''# **Rafael Stylianou**''')
 st.markdown(''' **CEI 521 - Advanced Topics Software Technology**''')
@@ -159,3 +159,9 @@ if st.button('Show Plots'):
         
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
+n1= st.number_input('Insert first number')
+n2= st.number_input('Insert second number')
+
+url= 'https://5lagyaru755oxcunku5b3vdiba0krkfd.lambda-url.ap-northeast-1.on.aws/?num1=%f&num2=%f' % (n1,n2)
+response = requests.get(url)
+st.write(response.text)
