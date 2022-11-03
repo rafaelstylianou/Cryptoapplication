@@ -159,6 +159,9 @@ if st.button('Show Plots'):
         
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
+st.title('Serverless application')
+
+
 n1= st.number_input('Insert first number')
 n2= st.number_input('Insert second number')
 
