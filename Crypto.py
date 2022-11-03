@@ -169,12 +169,12 @@ url= 'https://5lagyaru755oxcunku5b3vdiba0krkfd.lambda-url.ap-northeast-1.on.aws/
 response = requests.get(url)
 st.write(response.text)
 
-n1= st.number_input('Insert first number')
-n2= st.number_input('Insert second number')
+n3= st.number_input('Insert first number')
+n4= st.number_input('Insert second number')
 
-url= 'https://gk4vntqxykc6abzb6a7tt47nle0ixzsy.lambda-url.ap-northeast-1.on.aws/?num1=%f&num2=%f' % (n1,n2)
-response = requests.get(url)
-st.write(response.text)
+url= 'https://gk4vntqxykc6abzb6a7tt47nle0ixzsy.lambda-url.ap-northeast-1.on.aws/?num1=%f&num2=%f' % (n3,n4)
+response2 = requests.get(url)
+st.write(response2.text)
 
 
 
