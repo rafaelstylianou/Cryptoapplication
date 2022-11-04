@@ -176,8 +176,8 @@ url= 'https://gk4vntqxykc6abzb6a7tt47nle0ixzsy.lambda-url.ap-northeast-1.on.aws/
 response2 = requests.get(url)
 st.write(response2.text)
 
-n5= st.number_input('Insert third number')
-n6= st.number_input('Insert fourth number')
+n5= st.number_input('Insert fifth number')
+n6= st.number_input('Insert sixth number')
 
 url= 'https://whxb526ucmxocnzstepj3r3cqi0iksjh.lambda-url.ap-northeast-1.on.aws/?num1=%f&num2=%f' % (n5,n6)
 response3 = requests.get(url)
